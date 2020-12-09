@@ -56,4 +56,13 @@ public class Circle extends GeometricObject
         str += "}\n";
         return str;
     }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (obj instanceof Circle)
+            return ((Circle) obj).radius == this.radius;
+        else
+            return false;
+    }
 }
